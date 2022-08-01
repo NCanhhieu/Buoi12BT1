@@ -10,14 +10,14 @@ int main ( ) {
 		scanf("%d", &a[i]);
 	}
 	int max = a[0]; 
-	int near_max = 0;
-	for (int i = 1; i < n; i++) {
+	int near_max = a[1];
+	for (int i = 1; i < n; i++) {  // tim so lon nhat 
 		
 		if ( max < a[i] ) {
 			max = a[i];
 		}
 	}
-		for (int i = 0; i < n; i++) {	
+		for (int i = 0; i < n; i++) {	  // tim so gan lon nhat
 		if ( near_max < a[i] && a[i] < max) {
 			near_max = a[i];
 		}
