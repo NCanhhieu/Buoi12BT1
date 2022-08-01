@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main ( ) {
-	printf ( " nhap n :  \n") ;
+	printf ( " nhap n nguyen duong :  \n") ;
 	int n;
 	scanf("%d", &n);
 	int a[n];
