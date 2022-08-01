@@ -15,15 +15,20 @@ int main ( ) {
 		
 		if ( max < a[i] ) {
 			max = a[i];
-		}
+		} 
 	}
+	printf (" gia tri max %d", max); 
 		for (int i = 0; i < n; i++) {	  // tim so gan lon nhat
 		if ( near_max < a[i] && a[i] < max) {
-			near_max = a[i];
+			near_max = a[i]; 
+		} else {  break;
 		}
 		}
-	
 		
-	printf (" gia tri max %d va gan max %d \n", max, near_max);
-	return 0;
+	if ( near_max != max) {
+	printf (" gia tri  gan max %d \n",near_max);	
+} else  { printf (" ko co gia tri gan max");
+}
+return 0;
+
 }
